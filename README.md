@@ -1,26 +1,61 @@
+# 🚀 3D Developer Portfolio
 
-# 3D Developer Portfolio
+A modern, interactive **3D Developer Portfolio Website** built with **React Three Fiber, Three.js, and Tailwind CSS**.  
+Showcasing professional services like **Full-Stack Development, UI/UX Design, and 3D Web Experiences**.
 
-## Key Features
+![Portfolio Banner](![alt text](image.png))
 
-- **3D Web Development:** Utilizing React 3fiber and Three.js for immersive 3D rendering.
-- **Tailwind CSS Styling:** Crafting a visually appealing and responsive design with Tailwind CSS.
-- **Service Offerings:** Explore a range of tailored services, from full-stack development to UI/UX design.
+---
 
-## Getting Started
+## ✨ Key Features
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/ritika789/3d-portfolio.git
+- 🎨 **3D Web Development** – Immersive 3D experiences using **React Three Fiber** & **Three.js**  
+- ⚡ **Tailwind CSS Styling** – Responsive, modern, and visually appealing UI  
+- 🛠️ **Service Offerings** – Full-stack development, UI/UX design, technical consulting, and more  
+- 📱 **Responsive Design** – Optimized for desktops, tablets, and mobile devices  
+- 💡 **Interactive Components** – Smooth animations and 3D interactions  
 
-## Install Dependencies:
+---
 
+## 📂 Getting Started
+
+Follow these steps to run the project locally:
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/ritika789/3d-portfolio.git
+
+```
+### 2️⃣ Install Dependencies
+```bash
 cd 3d-portfolio
 npm install
-
-## Run the Development Server:
-
+```
+### 3️⃣ Run the Development Server
+```bash
 npm start
 
+```
+- Now open http://localhost:3000
+ in your browser 🚀
 
- ![Screenshot (90)](https://github.com/ritika789/3d-portfolio/assets/83690198/2ed08294-3f12-4183-b435-1df633824a05)
+ ## 📸 Portfolio Screenshots
+
+ ![Landing page](image-1.png)
+
+ ![About Page](image-2.png)
+
+ ## 🛠️ Tech Stack
+
+- Frontend: React.js, React Three Fiber, Three.js
+
+- Styling: Tailwind CSS
+
+- Deployment: GitHub Pages / Vercel / Netlify
+
+### 📝 Credits
+
+ - JavaScript Mastry – For inspiration and guidance in building interactive 3D web components
+
+# 👩‍💻 Author
+Made with ❤️ by Arun Kumar Bind

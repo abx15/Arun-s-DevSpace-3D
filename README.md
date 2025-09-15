@@ -65,6 +65,6 @@ Made with ❤️ by **Arun Kumar Bind**
 - **Phone:** +91-9129939972 
 - **GitHub:** [https://github.com/abx15](https://github.com/abx15)  
 - **Portfolio 1:** [https://arun-s-devspace-3d.netlify.app/](https://arun-s-devspace-3d.netlify.app/)  
-- **Portfolio 2:** [https://taupe-fox-7af636.netlify.app/](https://taupe-fox-7af636.netlify.app/)  
+- **Portfolio 2:** [https://arun15dev.netlify.app/](https://arun15dev.netlify.app/)  
 - **LinkedIn:** [https://www.linkedin.com/in/arun-kumar-bind](https://www.linkedin.com/in/arun-kumar-bind)  
 - **Twitter:** [https://twitter.com/arun_k_bind](https://twitter.com/arun_k_bind)

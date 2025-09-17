@@ -16,41 +16,46 @@ const Contact = () => {
   // Input change handler
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 
-  // Form submission
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    setIsLoading(true)
-    setCurrentAnimation('hit')
 
+  // Form submission handler
+  const handleSubmit = (e) => {
+    e.preventDefault(); 
+    setIsLoading(true);
+    setCurrentAnimation('hit');
+
+    // EmailJS send function
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,    
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,   
         {
           from_name: form.name,
-          to_name: 'Arun Kumar Bind', // ✅ तेरे नाम
+          to_name: 'Arun Kumar Bind',
           from_email: form.email,
-          to_email: 'developerarunwork@gmail.com', // ✅ तेरे email
+          to_email: 'developerarunwork@gmail.com',
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY    
       )
-      .then(() => {
-        setIsLoading(false)
-        showAlert({ show: true, text: 'Message sent successfully!', type: 'success' })
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setIsLoading(false);
+        setCurrentAnimation('idle');
+        showAlert({ show: true, text: 'Message sent successfully!', type: 'success' });
+
         setTimeout(() => {
-          hideAlert()
-          setCurrentAnimation('idle')
-          setForm({ name: '', email: '', message: '' })
-        }, 3000)
+          hideAlert();
+          setForm({ name: '', email: '', message: '' });
+        }, 3000);
       })
       .catch((error) => {
-        console.error(error)
-        setIsLoading(false)
-        setCurrentAnimation('idle')
-        showAlert({ show: true, text: "I didn't receive your message!", type: 'danger' })
-      })
-  }
+        console.error('FAILED...', error);
+        setIsLoading(false);
+        setCurrentAnimation('idle');
+        showAlert({ show: true, text: "I didn't receive your message!", type: 'danger' });
+      });
+  };
+
 
   const handleFocus = () => setCurrentAnimation('walk')
   const handleBlur = () => setCurrentAnimation('idle')
